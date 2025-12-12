@@ -126,7 +126,8 @@ namespace Matrices
 		}
 	}
 
-	RotationMatrix::RotationMatrix(double theta) : Matrix(2, 2)
+	RotationMatrix::RotationMatrix(double theta) 
+        : Matrix(2, 2)
 	{
 		a.at(0).at(0) = cos(theta);
 		a.at(0).at(1) = -sin(theta);
@@ -134,7 +135,8 @@ namespace Matrices
 		a.at(1).at(1) = cos(theta);
 	}
 
-	ScalingMatrix::ScalingMatrix(double scale) : Matrix(2, 2)
+	ScalingMatrix::ScalingMatrix(double scale) 
+        : Matrix(2, 2)
 	{
 		a.at(0).at(0) = scale;
 		a.at(1).at(1) = scale;
